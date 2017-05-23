@@ -1,8 +1,8 @@
 <?php
 
-	$db = mysql_connect ("localhost","u0068911_useramo","14021992");
+	$db = mysql_connect ("localhost","LOGIN","PASSWORD");
 
-	mysql_select_db ("u0068911_amocrm",$db);
+	mysql_select_db ("DB",$db);
 
 	mysql_query('SET NAMES utf8');
 
