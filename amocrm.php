@@ -1,44 +1,5 @@
 <?php
-$test = 'test';
-	$db = mysql_connect ("localhost","LOGIN","PASSWORD");
 
-	mysql_select_db ("DB",$db);
-
-	mysql_query('SET NAMES utf8');
-
-	
-
-	mb_internal_encoding('UTF-8');
-
-	
-
-	$minTasksUserId = mysql_fetch_array(
-
-		mysql_query("
-
-			SELECT
-
-				id, manager_id
-
-			FROM
-
-				manager
-
-			WHERE
-
-				active='1'
-
-			ORDER BY
-
-				last_task ASC
-
-			LIMIT
-
-				1"
-
-		,$db)
-
-	);
 
 	
 
